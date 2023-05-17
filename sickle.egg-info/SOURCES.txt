@@ -1,0 +1,7 @@
+README.md
+setup.py
+sickle.egg-info/PKG-INFO
+sickle.egg-info/SOURCES.txt
+sickle.egg-info/dependency_links.txt
+sickle.egg-info/entry_points.txt
+sickle.egg-info/top_level.txt
