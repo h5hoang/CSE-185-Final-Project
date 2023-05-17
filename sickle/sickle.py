@@ -2,6 +2,7 @@ import argparse
 from . import utils as utils
 from sickle import __version__
 import os
+import sys
 
 def main():
     parser = argparse.ArgumentParser(
