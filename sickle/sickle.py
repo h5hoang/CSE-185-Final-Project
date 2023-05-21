@@ -23,6 +23,14 @@ def main():
         metavar="FILE", type=str, required=True)
     
     #Other options
-
+    parser.add_argument("-s", "--output-single", help = "Output trimmed singles fastq file", \
+        metavar="FILE", type=str, required = False)
+    parser.add_argument("-t", "--qual-type", help = "Type of quality values (solexa (CASAVA < 1.3), illumina (CASAVA 1.3 to 1.7), sanger (which is CASAVA >= 1.8)) (required)", \
+        metavar="REG", type = str, required = False)
+    parser.add_argument("--version", help="Print the version and quit", \
+		action="version", version = '{version}'.format(version=__version__))
 
     args = parser.parse_args()
+
+if __name__ == "__main__":
+    main()
