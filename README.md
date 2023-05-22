@@ -2,10 +2,16 @@
 
 sickle info stuff here!
 
-IF USING VSCODE, INSTALL BIOPYTHON WITH COMMAND:
+# Install Instructions
+Installation of the bipython library is needed to run sickle. 
 py -m pip install biopython
 py -m pip install fastq    <- dont need hopefully
 
+# Basic Usage
+sickle []
 
+# Sickle Options
+
+# Testing
 https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules 
 ^ check out the  Bio.SeqIO.QualityIO submodule

@@ -1,6 +1,6 @@
 import argparse
-from . import utils as utils
-from sickle import __version__
+#from . import utils as utils
+from version import __version__
 import os
 import sys
 
