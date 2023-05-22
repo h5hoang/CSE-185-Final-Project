@@ -12,6 +12,10 @@ sickle []
 
 # Sickle Options
 
+# File format
+
+# Contributors
+
 # Testing
 https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules 
 ^ check out the  Bio.SeqIO.QualityIO submodule
