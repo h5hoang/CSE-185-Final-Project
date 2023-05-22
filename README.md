@@ -2,10 +2,11 @@
 
 sickle info stuff here!
 
-# Install Instructions
+# Installation Instructions
 Installation of the bipython library is needed to run sickle. 
+
 py -m pip install biopython
-py -m pip install fastq    <- dont need hopefully
+#py -m pip install fastq    <- dont need hopefully
 
 # Basic Usage
 sickle []

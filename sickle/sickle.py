@@ -1,4 +1,5 @@
 import argparse
+from utils import trimmer
 #from . import utils as utils
 from version import __version__
 import os
@@ -31,6 +32,8 @@ def main():
 		action="version", version = '{version}'.format(version=__version__))
 
     args = parser.parse_args()
+
+    trimmer(args.forward_file, args.reverse, args.output_1, args.output_2, args.output_single, args.qual_type)
 
 if __name__ == "__main__":
     main()
