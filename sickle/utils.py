@@ -8,8 +8,8 @@ from Bio import SeqIO
 
 def trimmer (forward_file, reverse_file, output_forward_file, output_reverse_file, output_single_file, qual_type):
     # reads files
-    forward_reads = SeqIO.parse(forward_file, "fastq")
-    reverse_reads = SeqIO.parse(reverse_file, "fastq")
+    forward_reads = list(SeqIO.parse(forward_file, "fastq"))
+    reverse_reads = list(SeqIO.parse(reverse_file, "fastq"))
 
     # creating output 
     trimmed_forward_reads = []
@@ -25,12 +25,12 @@ def trimmer (forward_file, reverse_file, output_forward_file, output_reverse_fil
         # check if forward and reverse reads pass the minimum length threshold
         if len(trimmed_forward_seq) >= 20 and len(trimmed_reverse_seq) >= 20:
             # create trimmed SeqRecord objects
-            trimmed_forward_record = forward_read
-            trimmed_forward_record.seq = trimmed_forward_seq
+            trimmed_forward_record = forward_read[0:len(trimmed_forward_seq)]
+            trimmed_forward_record.letter_annotations = {}
             trimmed_forward_record.letter_annotations["phred_quality"] = trimmed_forward_qual
 
-            trimmed_reverse_record = reverse_read
-            trimmed_reverse_record.seq = trimmed_reverse_seq
+            trimmed_reverse_record = reverse_read[0:len(trimmed_reverse_seq)]
+            trimmed_reverse_record.letter_annotations = {}
             trimmed_reverse_record.letter_annotations["phred_quality"] = trimmed_reverse_qual
 
             # add reads onto outputs

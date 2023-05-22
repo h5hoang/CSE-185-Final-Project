@@ -33,7 +33,7 @@ def main():
 
     args = parser.parse_args()
 
-    trimmer(args.forward_file, args.reverse, args.output_1, args.output_2, args.output_single, args.qual_type)
+    trimmer(args.forward, args.reverse, args.output_1, args.output_2, args.output_single, args.qual_type)
 
 if __name__ == "__main__":
     main()
