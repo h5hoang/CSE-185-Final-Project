@@ -1,8 +1,7 @@
 # CSE-185-Final-Project
 (Work in progress!)
 
-This is our final project for CSE185. It implements a subset of the "sickle" method.
-sickle info stuff here!
+This is our final project for CSE185. It implements a version of actual Sickle implentation done by Nikhil Joshi, UC Davis Bioinformatics Core. Our version inputs two fastq files and outputs two trimmed fastq files where these files are trimmed based on the quality of the reads inputted. 
 
 # Installation Instructions
 Installation requires the `biopython` library to be installed. You can install these with `pip`:
@@ -52,7 +51,8 @@ Kathy Gu, Pinyi Wang, Hanson Hoang
 We drew inspiration from Nikhil Joshi, UC Davis Bioinformatics Core: https://github.com/najoshi/sickle/tree/master
 
 # Testing
-testing commands are in sickle/test-utils.py 
+testing commands are in sickle/test-utils.py
+simply run test-utils.py to get the trimmed outputs for the files in the folder, example-files.  
 
 # References
 https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules 
