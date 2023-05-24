@@ -36,7 +36,8 @@ To run `sickle` on example files of NA12878_child_1.fq (forward) and NA12878_chi
 py sickle/sickle.py -f example-files/NA12878_child_1.fq -r example-files/NA12878_child_2.fq -t Sanger -o child1.fq -p child2.fq
 ```
 This should produce two output files child1.fq (forward) and child2.fq (reverse) in the repository, which should looks like:
-
+[child1](example-outputs/child1.fq)
+[child2](example-outputs/child2.fq)
 # Sickle Options
 The required inputs to `sickle` are: 
 - -f [FORWARD FILE]: Foward fastq file
