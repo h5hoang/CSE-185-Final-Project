@@ -1,7 +1,7 @@
 # CSE-185-Final-Project
 (Work in progress!)
 
-This is our final project for CSE185. It implements a version of actual Sickle implentation done by Nikhil Joshi, UC Davis Bioinformatics Core. Our version inputs two fastq files and outputs two trimmed fastq files where these files are trimmed based on the quality of the reads inputted. 
+This is our final project for CSE185. It implements a version of actual Sickle implentation done by Nikhil Joshi, UC Davis Bioinformatics Core (https://github.com/najoshi/sickle/tree/master), but in python. Our version inputs two fastq files and outputs two trimmed fastq files where these files are trimmed based on the quality of the reads inputted. 
 
 # Installation Instructions
 Installation requires the `biopython` library to be installed. You can install these with `pip`:
