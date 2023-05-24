@@ -25,7 +25,7 @@ python3 sickle/sickle.py --help
 ```
 
 # Basic Usage
-The basic usage of sickle is:
+The basic usage of `sickle` is:
 ```
 sickle [-h] -f FILE -r FILE -o FILE -p FILE [-s FILE] [-t REG] [--version]
 ```
