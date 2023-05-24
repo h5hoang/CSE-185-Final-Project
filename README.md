@@ -36,7 +36,7 @@ To run `sickle` on example files of NA12878_child_1.fq (forward) and NA12878_chi
 sickle -f example-files/NA12878_child_1.fq -r example-files/NA12878_child_2.fq -t Sanger -o child1.fq -p child2.fq 
 ```
 This should produce two output files child1.fq (forward) and child2.fq (reverse) in the repository, which should looks like:
-[child1](/Users/wangpinyi/Desktop/CSE-185-Final-Project/1/child1.fq)
+
 # Sickle Options
 
 # File format
