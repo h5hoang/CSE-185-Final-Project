@@ -16,6 +16,7 @@ For Mac version:
 python3 -m pip install biopython
 ```
 If the install was successful, typing the following code should show a useful message.
+
 For Windows version:
 ```
 py sickle/sickle.py --help 
