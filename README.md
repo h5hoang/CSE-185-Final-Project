@@ -34,7 +34,7 @@ To run `sickle` on example files of NA12878_child_1.fq (forward) and NA12878_chi
 ```
 py sickle/sickle.py -f example-files/NA12878_child_1.fq -r example-files/NA12878_child_2.fq -t Sanger -o child1.fq -p child2.fq
 ```
-This should produce two output files child1.fq (forward) and child2.fq (reverse) in the repository, which should looks like:
+This should produce two output files child1.fq (forward) and child2.fq (reverse) in the repository, which should looks the same like the files in example-outputs.
 
 # Sickle Options
 The required inputs to `sickle` are: 
@@ -45,6 +45,9 @@ The required inputs to `sickle` are:
 - -p [TRIMMED PE REVERSE FILE]: Generated output PE reverse fastq file
 
 # File format
+The output file format should be fastq file, details can be seen:
+
+https://maq.sourceforge.net/fastq.shtml
 
 # Contributors
 Kathy Gu, Pinyi Wang, Hanson Hoang
