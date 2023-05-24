@@ -31,7 +31,7 @@ The basic usage of `sickle` is:
 ```
 py sickle/sickle.py -f [FORWARD FILE] -r [REVERSE FILE] -t [QUALITY TYPE] -o [TRIMMED PE FOWARD FILE] -p [TRIMMED PE REVERSE FILE] 
 ```
-To run `sickle` on example files of NA12878_child_1.fq (forward) and NA12878_child_2.fq (reverse) (both files in the repository) as test examples:
+To run `sickle` on example files of NA12878_child_1.fq (forward) and NA12878_child_2.fq (reverse) (both files in the repository) as test examples in the terminal:
 ```
 py sickle/sickle.py -f example-files/NA12878_child_1.fq -r example-files/NA12878_child_2.fq -t Sanger -o child1.fq -p child2.fq
 ```
