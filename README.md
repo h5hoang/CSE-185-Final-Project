@@ -14,7 +14,7 @@ For Mac version:
 ```
 python3 -m pip install biopython
 ```
-If the install was successful, typing 
+If the install was successful, typing the following code should show a useful message.
 For Windows version:
 ```
 py sickle/sickle.py --help 
@@ -23,7 +23,6 @@ For Mac version:
 ```
 python3 sickle/sickle.py --help
 ```
-should show a useful message.
 
 # Basic Usage
 The basic usage of sickle is:
