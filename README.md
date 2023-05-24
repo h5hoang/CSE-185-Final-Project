@@ -47,6 +47,7 @@ The required inputs to `sickle` are:
 
 # File format
 The output file format should be fastq file, details can be seen:
+
 https://maq.sourceforge.net/fastq.shtml
 
 # Contributors
