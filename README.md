@@ -5,22 +5,21 @@ sickle info stuff here!
 
 # Installation Instructions
 Installation requires the `biopython` library to be installed. You can install these with `pip`:
-```
-Windows version
+For Windows version
 ```
 py -m pip install biopython
 ```
-Mac version:
+For Mac version:
 ```
 python3 -m pip install biopython
 ```
 If the install was successful, typing 
 ```
-Windows version:
+For Windows version:
 ```
 `py sickle/sickle.py --help` 
 ```
-Mac version:
+For Mac version:
 ```
 python3 sickle/sickle.py --help
 ```
