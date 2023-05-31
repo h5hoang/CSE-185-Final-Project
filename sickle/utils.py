@@ -50,15 +50,11 @@ def trimmer (forward_file, reverse_file, output_forward_file, output_reverse_fil
     # just to make sure process is done
     print("Sickle Trimming process is complete.")
 
-def trim_helper(read, qual_type, qual_threshold, length_threshold):
+def trim_helper(read, qual_type):
     trimmed_seq = ""
     trimmed_qual = []
 
     # checks inputted quality type
-    if ((qual_threshold == None) and (length_threshold == None)):
-        qual_threshold = 20
-        length_threshold = 20
-
     if (qual_type.lower() == "sanger"):
         qual_offset = 64
     else:
@@ -66,7 +62,7 @@ def trim_helper(read, qual_type, qual_threshold, length_threshold):
 
     # loops based on qual type, default qual threshold and length threshold set to 20
     for base, qual in zip(read.seq, read.letter_annotations["phred_quality"]):
-        if qual >= qual_threshold:
+        if qual >= 20:
             trimmed_seq += base
             trimmed_qual.append(qual + qual_offset)
 
