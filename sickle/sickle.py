@@ -30,7 +30,10 @@ def main():
         metavar="REG", type = str, required = False)
     parser.add_argument("--version", help="Print the version and quit", \
 		action="version", version = '{version}'.format(version=__version__))
-
+    parser.add_argument("-q", help = "Threshold for trimming based on average quality in a window. Default 20.", \
+        metavar="REG", type = str, required = False)
+    parser.add_argument("-q", help = "Threshold to keep a read based on length after trimming. Default 20.", \
+        metavar="REG", type = str, required = False)
     args = parser.parse_args()
 
     trimmer(args.forward, args.reverse, args.output_1, args.output_2, args.output_single, args.qual_type)
