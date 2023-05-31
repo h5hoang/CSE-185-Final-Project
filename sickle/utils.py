@@ -53,19 +53,50 @@ def trimmer (forward_file, reverse_file, output_forward_file, output_reverse_fil
 def trim_helper(read, qual_type):
     trimmed_seq = ""
     trimmed_qual = []
-
-    # checks inputted quality type
-    if (qual_type.lower() == "sanger"):
-        qual_offset = 64
-    else:
+    
+    # Define quality offset based on the qual_type
+    if qual_type.lower() == "sanger":
         qual_offset = 33
+    elif qual_type.lower() == "illumina":
+        qual_offset = 64
+    elif qual_type.lower() == "solexa":
+        qual_offset = 64 
+    
+    # caluculate window size for trimming
+    window_size = int(0.1*len(read.seq))
+    if window_size < 1:
+        window_size = len(read.seq)
 
-    # loops based on qual type, default qual threshold and length threshold set to 20
-    for base, qual in zip(read.seq, read.letter_annotations["phred_quality"]):
-        if qual >= 20:
-            trimmed_seq += base
-            trimmed_qual.append(qual + qual_offset)
+    # perform 5_end trimming
+    start_index = 0
+    end_index = window_size
+    rise_index = 0
+    # loop over the read to cut at position qual rise above threshold
+    while end_index <= len(read.letter_annotations["phred_quality"]):
+        window_qual = read.letter_annotations["phred_quality"][start_index:end_index]
+        avg_qual = sum(window_qual) / window_size
+        # calculate the point of rise
+        if avg_qual >= 20:
+            rise_index = window_qual.index(min(window_qual))
+        # cut what after the point of rise
+        if rise_index > 0:
+            trimmed_seq = read.seq[rise_index:]
+            trimmed_qual = read.letter_annotations["phred_quality"][rise_index:]
+            break
+        # slide the window
+        start_index += 1
+        end_index += 1
+    
+    # perform 3_end trimming
+    for i in range(len(trimmed_seq) - 1, -1, -1):
+        qual = trimmed_qual[i]
 
+        # Check if quality drops below the threshold
+        if qual < 20:
+            # Cut the read at the drop position
+            trimmed_seq = trimmed_seq[:i]
+            trimmed_qual = trimmed_qual[:i]
+            break
 
     return trimmed_seq, trimmed_qual
 
