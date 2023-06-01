@@ -40,7 +40,7 @@ This should produce two output files child1.fq (forward) and child2.fq (reverse)
 The required inputs to `sickle` are: 
 - -f [FORWARD FILE]: Foward fastq file
 - -r [REVERSE FILE]: Reverse fastq file
-- -t [QUALITY TYPE]: Quality type, i.e. Sanger or Illumina
+- -t [QUALITY TYPE]: Quality type, i.e. Sanger or Illumina (right now our implementation only runs with Sanger quality parameters)
 - -o [TRIMMED PE FOWARD FILE]: Generated output PE forward fastq file
 - -p [TRIMMED PE REVERSE FILE]: Generated output PE reverse fastq file
 
