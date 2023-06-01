@@ -60,3 +60,7 @@ simply run test-utils.py to get the trimmed outputs for the files in the folder,
 # References
 https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules 
 ^ check out the  Bio.SeqIO.QualityIO submodule
+
+fastq files for benchmarking soon:
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR217/ERR217993/ERR217993_1.fastq.gz	
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR217/ERR217507/ERR217507_2.fastq.gz	
