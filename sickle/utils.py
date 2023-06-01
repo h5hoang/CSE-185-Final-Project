@@ -2,10 +2,6 @@ import sys
 from Bio import SeqIO
 #import fastq <- not working for some reason but we might not need this at all
 
-#testing to see if library is able to print out fq file!
-#for record in SeqIO.parse("example-files/NA12878_child_1.fq", "fastq"):
-#    print(record.id)
-
 def trimmer (forward_file, reverse_file, output_forward_file, output_reverse_file, output_single_file, qual_type):
     # reads files
     forward_reads = list(SeqIO.parse(forward_file, "fastq"))

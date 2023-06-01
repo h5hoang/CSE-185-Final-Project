@@ -64,3 +64,4 @@ https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules
 fastq files for benchmarking soon:
 ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR217/ERR217507/ERR217507_1.fastq.gz	
 ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR217/ERR217507/ERR217507_2.fastq.gz	
+reduced both files to 366904 lines -> 22746kb to fit github file size limit
