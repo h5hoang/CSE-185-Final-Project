@@ -50,13 +50,10 @@ def trim_helper(read, qual_type):
     trimmed_seq = ""
     trimmed_qual = []
     
-    # Define quality offset based on the qual_type
-    if qual_type.lower() == "sanger":
-        qual_offset = 33
-    elif qual_type.lower() == "illumina":
-        qual_offset = 64
-    elif qual_type.lower() == "solexa":
-        qual_offset = 64 
+    # Alter offset of quality scores according to qual_type
+    if qual_type == "Illumina" or qual_type == "Solexa":
+        for i in range(len(read.letter_annotations["phred_quality"])):
+            read.letter_annotations["phred_quality"][i] = read.letter_annotations["phred_quality"][i] - 33 + 64
     
     # caluculate window size for trimming
     window_size = int(0.1*len(read.seq))
