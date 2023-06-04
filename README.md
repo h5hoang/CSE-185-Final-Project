@@ -9,22 +9,20 @@ This is our final project for CSE185. It implements a version of the Sickle impl
 git clone https://github.com/h5hoang/CSE-185-Final-Project
 ```
 
-2. Setup Installation: 
+2. Setup Installation
 
-For Windows version
-``` 
-Run the command
+For Windows version:
 ```
 py -m setup.py install    
 ```
-For Mac version 
+For Mac version:
 ```
 python3 -m pip install biopython
 ```
 
 3. Usage of our sickle implementation requires the `biopython` library to be installed. You can install these with `pip`:
 
-For Windows version
+For Windows version:
 ```
 py -m pip install biopython
 ```
