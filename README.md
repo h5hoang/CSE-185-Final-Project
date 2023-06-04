@@ -11,11 +11,11 @@ git clone https://github.com/h5hoang/CSE-185-Final-Project
 
 For Windows version:
 ```
-py -m setup.py install    
+py setup.py install    
 ```
 For Mac version:
 ```
-python3 -m pip install biopython
+python3 pip install biopython
 ```
 
 3. Usage of our sickle implementation requires the `biopython` library to be installed. You can install these with `pip`:
