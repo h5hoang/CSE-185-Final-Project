@@ -73,4 +73,5 @@ testing commands are in sickle/test-utils.py
 simply run test-utils.py to get the trimmed outputs for the files in the folder, example-files.  
 
 # References
-https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules 
+Biopython SeqIO submodule: https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules 
+Official Sickle Implementation: https://github.com/najoshi/sickle/tree/master
