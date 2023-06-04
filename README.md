@@ -4,11 +4,12 @@
 This is our final project for CSE185. It implements a version of the Sickle implentation done by Nikhil Joshi, UC Davis Bioinformatics Core (https://github.com/najoshi/sickle/tree/master), but in python. Our version only allows for paired-end trimming as it inputs two fastq files and outputs two trimmed fastq files where these files are trimmed based on the quality of the reads inputted. 
 
 # Installation Instructions
-Clone the Repository into your IDE (we used VSCode)
+1. Clone the Repository into your IDE (we used VSCode)
 ```
 git clone https://github.com/h5hoang/CSE-185-Final-Project
+```
 
-Setup Installation: 
+2. Setup Installation: 
 
 For Windows version
 ``` 
@@ -21,7 +22,7 @@ For Mac version
 python3 -m pip install biopython
 ```
 
-Usage of our sickle implementation requires the `biopython` library to be installed. You can install these with `pip`:
+3. Usage of our sickle implementation requires the `biopython` library to be installed. You can install these with `pip`:
 
 For Windows version
 ```
@@ -32,7 +33,7 @@ For Mac version:
 python3 -m pip install biopython
 ```
 
-If the install was successful, typing the following code should show a useful message.
+4. If the install was successful, typing the following code should show a useful message.
 
 For Windows version:
 ```
