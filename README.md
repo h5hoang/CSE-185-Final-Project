@@ -22,11 +22,11 @@ python3 -m pip install biopython
 
 For Windows version:
 ```
-py -m pip install biopython
+py pip install biopython
 ```
 For Mac version:
 ```
-python3 -m pip install biopython
+python3 pip install biopython
 ```
 
 4. If the install was successful, typing the following code should show a useful message.
@@ -44,7 +44,7 @@ python3 sickle/sickle.py --help
 The required inputs to `sickle` are: 
 - -f [FORWARD FILE]: Foward fastq file
 - -r [REVERSE FILE]: Reverse fastq file
-- -t [QUALITY TYPE]: Quality type, i.e. Sanger or Illumina (right now our implementation only runs with Sanger quality parameters)
+- -t [QUALITY TYPE]: Quality type, i.e. Sanger, Illumina and Solexa
 - -o [TRIMMED PE FOWARD FILE]: Generated output PE forward fastq file
 - -p [TRIMMED PE REVERSE FILE]: Generated output PE reverse fastq file
 
