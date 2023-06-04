@@ -4,7 +4,12 @@
 This is our final project for CSE185. It implements a version of the Sickle implentation done by Nikhil Joshi, UC Davis Bioinformatics Core (https://github.com/najoshi/sickle/tree/master), but in python. Our version only allows for paired-end trimming as it inputs two fastq files and outputs two trimmed fastq files where these files are trimmed based on the quality of the reads inputted. 
 
 # Installation Instructions
-Installation requires the `biopython` library to be installed. You can install these with `pip`:
+Clone the Repository into your IDE (we used VSCode)
+```
+git clone https://github.com/h5hoang/CSE-185-Final-Project
+``` 
+
+Usage of our sickle implementation requires the `biopython` library to be installed. You can install these with `pip`:
 
 For Windows version
 ```
@@ -59,9 +64,3 @@ simply run test-utils.py to get the trimmed outputs for the files in the folder,
 
 # References
 https://biopython.org/docs/1.75/api/Bio.SeqIO.html#submodules 
-^ check out the  Bio.SeqIO.QualityIO submodule
-
-fastq files for benchmarking soon:
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR217/ERR217507/ERR217507_1.fastq.gz	
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR217/ERR217507/ERR217507_2.fastq.gz	
-reduced both files to 366904 lines -> 22746kb to fit github file size limit
