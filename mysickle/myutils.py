@@ -92,7 +92,3 @@ def trim_helper(read, qual_type):
             break
 
     return trimmed_seq, trimmed_qual
-
-#for record in SeqIO.parse("example-files/NA12878_child_1.fq", "fastq"):
-#    print(record.format("qual"))
-
