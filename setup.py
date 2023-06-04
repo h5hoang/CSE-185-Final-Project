@@ -16,7 +16,7 @@ with open(os.path.join(curdir, 'sickle/version.py'), 'w') as fout:
         )
         
 setup(
-    name='mysickle',
+    name='sickle',
     version=VERSION,
     description='CSE185 Final Project',
     author='Kathy Gu, Pinyi Wang, Hanson Hoang',
